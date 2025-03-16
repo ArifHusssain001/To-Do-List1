@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        ul { list-style-type: none; padding: 0; }
+        li { padding: 10px; margin: 5px; background: #eee; }
+        .done { text-decoration: line-through; color: gray; }
+    </style>
+</head>
+<body>
+
+    <h2>To-Do List</h2>
+    
+    <!-- Task Adding Form -->
+    <form action="http://127.0.0.1:5000/add" method="post">
+        <input type="text" name="task" placeholder="Enter Task" required="">
+        <input type="date" name="due_date">  <!-- Due Date Field (Optional) -->
+        <button type="submit">Add Task</button>
+    </form>
+
+    
+    <p>No tasks found.</p>
+    
+
+
+</body></html>
